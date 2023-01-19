@@ -35,4 +35,5 @@ linegraph = alt.Chart(data).mark_line().encode(
 	y = 'Health(Life Expectancy)'
 )
 
+# save/ export the line graph
 linegraph.save('linegraph.html',embed_options={'render':'svg'})
