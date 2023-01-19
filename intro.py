@@ -29,3 +29,10 @@ generosityPlot = alt.Chart(data).mark_circle().encode(
 # focet scatter plot 1 and 2
 healthPlot | generosityPlot
 
+# line graph
+linegraph = alt.Chart(data).mark_line().encode(
+	x = 'Happiness Rank',
+	y = 'Health(Life Expectancy)'
+)
+
+linegraph.save('linegraph.html',embed_options={'render':'svg'})
