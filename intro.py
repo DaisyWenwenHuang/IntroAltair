@@ -27,6 +27,7 @@ generosityPlot = alt.Chart(data).mark_circle().encode(
 )
 
 # focet scatter plot 1 and 2
+# very easy to display several plots tegerther
 healthPlot | generosityPlot
 
 # line graph
